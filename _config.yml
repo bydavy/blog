@@ -1,0 +1,56 @@
+# Dependencies
+markdown: redcarpet
+highlighter: pygments
+
+# Setup
+title: ByDavy
+description: "Code and decode small pieces of code"
+baseurl: /
+url: http://www.bydavy.com
+permalink: /:year/:month/:title/
+paginate: 5
+
+# Disqus
+disqus_forum_url: "bydavycom"
+posts:
+  comments: true
+
+# Settings
+google_analytics: "UA-13053027-2"
+
+# Author
+author:
+  name: Davy
+  email: bydavy@gmail.com
+  email_md5: 8b12bb556c84e8deb4befd1fafb92d3c
+  linkedin: davyleggieri
+  twitter: davyleggieri
+  github: bydavy
+
+# Sitemap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "test"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"

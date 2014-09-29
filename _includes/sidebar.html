@@ -1,0 +1,33 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p class="lead">{{ site.description }}</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% for menu in site.data.sidebar %}
+        {% if menu.title != null %}
+          {% assign menu_url = site.baseurl | append: menu.url | append: '/index.html' %}
+          <a class="sidebar-nav-item{% if page.url == menu_url %} active{% endif %}" href="{{ menu_url }}">{{ menu.title }}</a>
+
+          {% for sub in menu.sub %}
+            {% if sub.title != null %}
+                {% assign sub_url = site.baseurl | append: sub.url | append: '/index.html' %}
+                <a class="sidebar-nav-item{% if page.url == sub_url %} active{% endif %}" href="{{ sub_url }}">&nbsp;- {{ sub.title }}</a>
+            {% endif %}
+          {% endfor %}
+
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+  </div>
+</div>
