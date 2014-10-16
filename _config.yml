@@ -10,6 +10,9 @@ url: http://www.bydavy.com
 permalink: /:year/:month/:title/
 paginate: 5
 
+# Handling Reading
+exclude: ["Gemfile","Gemfile.lock"]
+
 # Disqus
 disqus_forum_url: "bydavycom"
 posts:
@@ -17,6 +20,7 @@ posts:
 
 # Settings
 google_analytics: "UA-13053027-2"
+simpleform-api-token: "f3f07e4a1166f9d485baea6b458eefbb"
 
 # Author
 author:

@@ -7,7 +7,7 @@ title: Contact
 wordpress_id: 99
 ---
 
-<form class="pure-form" action="http://getsimpleform.com/messages?form_api_token=f3f07e4a1166f9d485baea6b458eefbb" method="post" id="contactMe">
+<form class="pure-form" action="http://getsimpleform.com/messages?form_api_token={{ site.simpleform-api-token }}" method="post" id="contactMe">
     <fieldset class="pure-group">
         <input type='hidden' name='redirect_to' value='{{ site.url }}/contact/thank_you.html' />
         <input id="name" class="pure-input-1-2"  type="text" name="Name" placeholder="Name"/>
