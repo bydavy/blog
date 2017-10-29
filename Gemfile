@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'hpricot'
 
+gem 'rouge'
 
 # Add github-pages
 require 'json'
