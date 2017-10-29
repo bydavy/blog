@@ -2,3 +2,5 @@ _venv
 _site
 .sass-cache
 Gemfile.lock
+.jekyll-metadata
+vendor

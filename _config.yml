@@ -58,3 +58,6 @@ defaults:
       type: "pages"
     values:
       layout: "project"
+
+plugins:
+  - jekyll-paginate
