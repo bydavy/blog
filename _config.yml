@@ -11,7 +11,7 @@ permalink: /:year/:month/:title/
 paginate: 5
 
 # Handling Reading
-exclude: ["Gemfile","Gemfile.lock"]
+exclude: ["Gemfile","Gemfile.lock","vendor","build.sh"]
 
 # Disqus
 disqus_forum_url: "bydavycom"
